@@ -50,9 +50,6 @@ nav{
 }
 
 .content {
-    flex-grow: 1;
-    padding: 2rem;
-    background-color: rgb(236, 236, 236);
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 3rem;
