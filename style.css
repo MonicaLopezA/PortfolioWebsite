@@ -50,11 +50,29 @@ nav{
 }
 
 .content {
+    flex-grow: 1;
+    padding: 2rem;
     display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
+code.html, .css.html, .javascript.html, .resume.html {
+    font-size: 36px;
+    color:#d48e9b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.html-content img {
+    background-color: rgb(246, 193, 204);
+    width: 340px;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
 p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
@@ -125,6 +143,18 @@ p {
 
 .footer {
     margin-top: auto;
+}
+
+.html-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.html-icon {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
 }
 
 a:hover {
