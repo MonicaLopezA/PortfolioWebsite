@@ -22,11 +22,21 @@ body{
 }
 
 
-.navigation ul {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+}
+
+nav{
     font-size: 28px;
-    list-style-type: none;
+    padding: 10px;
+    display: flex;
     justify-content: center;
     gap: 40px;
+    
 }
 
 .navigation a{
@@ -63,16 +73,20 @@ p {
 }
 
 .welcome {
-    background-color: rgb(250, 235, 194);
-    min-height: 340px;
-    max-height: 340px;
+    font-size: 20px;
+    width: 80%;
+    height: auto;
+    background-color:  rgb(246, 193, 204);
     border-radius: 20px;
-    padding: 2rem;
+    margin: 20px auto;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    flex-grow: 1;
-    overflow: scroll;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .welcome p{
@@ -93,6 +107,12 @@ p {
     gap: 1rem;
     flex-grow: 1;
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.OSTC::-webkit-scrollbar {
+    display: none;
 }
 
 .info{

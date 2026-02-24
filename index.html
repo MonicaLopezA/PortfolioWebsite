@@ -6,21 +6,22 @@
     <title>Monica's Porfolio Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="M.png" type="image/x-icon">
   </head>
   <body>
     <header class="Banner"> 
-        <img src="Codes Portfolio Banner (2).png">
+        <img src="Codes Portfolio Banner (2).png" alt="Portfolio Banner">
     </header>
     <nav class="navigation">
         <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="code.html">HTML</a></li>
             <li><a href="css.html">CSS</a></li>
             <li><a href="javascript.html">JavaScript</a></li>
             <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
-
+    
     <main class="content">
         <img src="Monica.jpg" alt="Monica's Picture" class="profile-pic">
         <div class="welcome">
@@ -38,6 +39,14 @@
             <p><i class="material-icons">email</i> Email: monica_ruiz18@hotmail.com</p>
             <p><i class="material-icons">phone</i> Phone: (586) 291-1756</p>
         </div>
+        <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      ctx.beginPath();
+      ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+      ctx.stroke();
+    </script>
     </main>
 
     <footer class="footer">
