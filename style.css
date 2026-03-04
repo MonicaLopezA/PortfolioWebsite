@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Mochi Boom DEMO';
+    src: url(Mochi\ Boom\ DEMO.ttf);
+}
+
 body{
     display:flex;
     flex-direction: column;
@@ -48,12 +53,28 @@ nav{
     color:#94ddde;
     text-decoration: none;
 }
+ h1{
+    font-family: 'Mochi Boom DEMO';
+    font-size: 48px;
+    color:  rgb(217, 140, 154);
+    word-spacing: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+ h2 {
+    font-family: 'Amoria';
+    font-size: 36px;
+    color: rgb(70, 58, 61);
+    margin-bottom: 20px;
+    text-align: center;
+ }
 
-.content {
+content {
     flex-grow: 1;
-    padding: 2rem;
-    display: grid;
+    display: row;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
 code.html, .css.html, .javascript.html, .resume.html {
@@ -63,7 +84,7 @@ code.html, .css.html, .javascript.html, .resume.html {
     text-align: center;
 }
 
-.html-content img {
+.web-content img {
     background-color: rgb(246, 193, 204);
     width: 340px;
     height: auto;
@@ -72,17 +93,20 @@ code.html, .css.html, .javascript.html, .resume.html {
     display: flex;
 }
 p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'arial', monospace;
     font-size: 18px;
     line-height: 1.6;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.616);
 }
 
-.profile-pic {
-    width: 300px;
-    height: 400px;
-    flex-shrink: 0;
-    border-radius: 10px;
+img {
+    border-radius: 20px;
+    max-width: 100%; 
+    max-height: 400px; ;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    gap: 30;
 }
 
 .welcome {
@@ -91,7 +115,7 @@ p {
     height: auto;
     background-color:  rgb(246, 193, 204);
     border-radius: 20px;
-    margin: 20px auto;
+    margin: 50px auto 20px auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -104,7 +128,7 @@ p {
 
 .welcome p{
     font-size: 30px;
-    color: rgb(92, 123, 131);
+    color: rgba(0, 0, 0, 0.616);
     margin: 0;
     word-wrap: break-word;
 }
@@ -112,16 +136,17 @@ p {
 
 .OSTC {
     background-color: rgb(232, 194, 250);
+    width: 80%;
     height: auto;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 20px;
+    margin: 50px auto 20px auto;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 20px;
     flex-grow: 1;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    justify-content: center;
+    text-align: center;
 }
 
 .OSTC::-webkit-scrollbar {
@@ -131,11 +156,16 @@ p {
 .info{
     background-color: rgb(194, 232, 250);
     border-radius: 20px;
+    width: 30%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     grid-column: 1 / -1;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto 20px auto;
 }
 
 
@@ -143,7 +173,12 @@ p {
     margin-top: auto;
 }
 
-.html-content {
+.web-content {
+    background-color: rgb(217, 140, 154);
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 20px;
     display: flex;
     align-items: flex-start;
     gap: 2rem;
