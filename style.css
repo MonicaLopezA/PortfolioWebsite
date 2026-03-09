@@ -71,7 +71,7 @@ nav{
 
 content {
     flex-grow: 1;
-    display: row;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
@@ -84,14 +84,6 @@ code.html, .css.html, .javascript.html, .resume.html {
     text-align: center;
 }
 
-.web-content img {
-    background-color: rgb(246, 193, 204);
-    width: 340px;
-    height: auto;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-}
 p {
     font-family: 'arial', monospace;
     font-size: 18px;
@@ -157,15 +149,18 @@ img {
     background-color: rgb(194, 232, 250);
     border-radius: 20px;
     width: 30%;
-    padding: 2rem;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    grid-column: 1 / -1;
+    gap: 10px;
     flex-grow: 1;
     justify-content: center;
     text-align: center;
     margin: 50px auto 20px auto;
+}
+
+.info p {
+    word-wrap: break-word;
 }
 
 
@@ -182,4 +177,28 @@ img {
 a:hover {
     background-color: #eee5d1d5;
     color: rgb(6, 167, 153);
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+    
+    .info {
+        width: 80%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .navigation a {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .welcome, .OSTC, .info {
+        width: 90%;
+    }
 }
