@@ -173,17 +173,6 @@ img {
     margin-top: auto;
 }
 
-.web-content {
-    background-color: rgb(217, 140, 154);
-    padding: 20px;
-    width: 80%;
-    margin: 20px auto;
-    border-radius: 20px;
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-}
-
 .html-icon {
     width: 150px;
     height: 150px;
