@@ -35,6 +35,8 @@ nav ul {
 }
 
 nav{
+    position: sticky;
+    top: 0;
     font-size: 28px;
     padding: 10px;
     display: flex;
@@ -104,7 +106,7 @@ img {
     font-size: 20px;
     width: 80%;
     height: auto;
-    background-color:  rgb(246, 193, 204);
+    background-color:   rgb(217, 140, 154);
     border-radius: 20px;
     margin: 50px auto 20px auto;
     padding: 20px;
@@ -121,7 +123,7 @@ img {
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     margin: 20px auto;
 }
 
@@ -145,7 +147,7 @@ img {
 
 
 .OSTC {
-    background-color: rgb(232, 194, 250);
+    background-color:   rgb(246, 193, 204);
     width: 80%;
     height: auto;
     border-radius: 20px;
@@ -164,7 +166,7 @@ img {
 }
 
 .info{
-    background-color: rgb(194, 232, 250);
+    background-color:rgb(255, 244, 230);
     border-radius: 20px;
     width: 30%;
     padding: 20px;
@@ -229,7 +231,7 @@ iframe.project-list {
 }
 
 .project-list {
-    background-color: #94ddde;
+    background-color: rgb(246, 193, 204);
     border-radius: 20px;
     list-style: none;
     padding: 20px;
@@ -241,11 +243,11 @@ iframe.project-list {
 }
 
 .welcome {
-    background-color:  #FFF4E6;
+    background-color:  rgb(246, 193, 204);
     font-size: 100px;
     width: 100%;
-    height: auto;
-    margin: 50px auto 20px auto;
+    height: 400px;
+    margin: 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
